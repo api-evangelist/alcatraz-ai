@@ -1,0 +1,64 @@
+generated: '2026-08-06'
+method: searched
+source: https://support.alcatraz.ai/api-keys
+docs: https://support.alcatraz.ai/api-keys
+notes: 'No OpenAPI or Swagger document is published by Alcatraz AI, so this profile is
+  read from the vendor''s own public Admin Portal Guide (v2.5) and Help Center rather
+  than derived from a specification. The endpoint reference itself is only reachable
+  from inside the authenticated Admin Portal via its "API Docs" button; the guide directs
+  everyone else to their Alcatraz AI account manager.'
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+  sso: [openIdConnect, saml2]
+schemes:
+- name: x-alcatraz-api-key
+  type: apiKey
+  in: header
+  parameter_name: x-alcatraz-api-key
+  applies_to: https://platform.alcatraz.ai/api/v2/
+  description: 'API Keys are generated in the Admin Portal under Accounts > Account
+    Settings > API Keys in order to identify and authorize a third-party project or
+    application to access the Alcatraz Admin Portal API. The key value is displayed
+    in plain text exactly once at creation.'
+  provisioning: self-service inside the authenticated Admin Portal (customer administrators only)
+  rotation: keys can be added and removed from the API Keys table; no documented expiry
+  sources:
+  - https://support.alcatraz.ai/api-keys
+  - https://alcatraz-docs.s3.us-west-2.amazonaws.com/Guides/Alcatraz+AI+Admin+Portal+Guide+v2.5.pdf
+portal_sso:
+  description: 'Administrator sign-in to the Alcatraz Admin Portal (not the API) supports
+    enterprise single sign-on. This is a human authentication surface, not a machine
+    credential.'
+  mechanisms:
+  - id: openIdConnect
+    docs: https://support.alcatraz.ai/sso-configuration-guide
+  - id: saml2
+    note: Azure AD / Entra ID and SAML
+    docs: https://support.alcatraz.ai/single-sign-on-with-azure-and-saml
+  - id: supported-providers
+    docs: https://support.alcatraz.ai/supported-single-sign-on-providers
+gaps:
+- No public OpenAPI/Swagger description of the API.
+- No documented OAuth 2.0 or OpenID Connect flow for API (machine) access — only a static header API key.
+- No published scope or permission model for API keys, so least-privilege cannot be assessed from public material.
+- No public API reference; endpoint list, parameters and error semantics are behind the Admin Portal login.
+x-evidence:
+- url: https://support.alcatraz.ai/api-keys
+  http_status: 200
+  fetched: '2026-08-06'
+  note: 'Help Center article "API Keys" — states an API key is required to integrate
+    with the Alcatraz platform via the REST API, and that further REST API information
+    comes from an Alcatraz AI account manager.'
+- url: https://alcatraz-docs.s3.us-west-2.amazonaws.com/Guides/Alcatraz+AI+Admin+Portal+Guide+v2.5.pdf
+  http_status: 200
+  fetched: '2026-08-06'
+  note: 'Section 3.1.7.2 "API Key Documentation": Request URL for Alcatraz AI API is
+    https://platform.alcatraz.ai/api/v2/ ; authenticate with the header x-alcatraz-api-key.'
+- url: https://support.alcatraz.ai/3rd-party-integrations
+  http_status: 200
+  fetched: '2026-08-06'
+  note: Lists the OIDC and Azure/SAML SSO configuration guides for portal sign-in.

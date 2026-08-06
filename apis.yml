@@ -1,7 +1,15 @@
 aid: alcatraz-ai
 name: Alcatraz AI
-description: 'Alcatraz AI is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Alcatraz AI, Inc. builds privacy-first facial authentication for enterprise
+  physical access control, replacing badges, cards and PINs with the face. Its flagship
+  edge device, Rock X, installs in-line between any Wiegand or OSDP reader and an existing
+  access control system and authenticates people in real time at the edge without storing
+  or transmitting a facial image. Founded in 2016 in Cupertino, California, the company
+  pioneered Facial-Authentication-as-a-Service (FAaaS) and layers tailgating detection,
+  3D liveness, ONVIF video-at-the-door and SIP intercom onto a single reader, managed
+  through a cloud or on-premises Admin Portal with native C-CURE and Genetec integrations
+  and a customer-facing REST API secured with an x-alcatraz-api-key header.'
+image: https://cdn.prod.website-files.com/67e2614c2319766b465b0ce2/6904b90a7255ef89e1191eca_open-graph-main.jpg
 url: https://raw.githubusercontent.com/api-evangelist/alcatraz-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,12 +20,98 @@ created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
-apis: []
+- Access Control
+- Biometrics
+- Facial Authentication
+- Physical Security
+- Identity
+- Internet of Things
+- Artificial Intelligence
+apis:
+- aid: alcatraz-ai:admin-portal-api
+  name: Alcatraz Admin Portal API
+  description: 'Customer-facing REST API for the Alcatraz Admin Portal, used by third-party
+    projects and applications to administer Rock devices, users, profiles and events.
+    Access is authorized with an API key generated in the Admin Portal (Accounts >
+    Account Settings > API Keys) and passed in the x-alcatraz-api-key header. The
+    endpoint reference is published only inside the authenticated Admin Portal via
+    its API Docs button; the vendor directs everyone else to their Alcatraz AI account
+    manager.'
+  humanURL: https://support.alcatraz.ai/api-keys
+  baseURL: https://platform.alcatraz.ai/api/v2/
+  tags:
+  - Access Control
+  - Biometrics
+  - Identity
+  properties:
+  - type: Documentation
+    url: https://support.alcatraz.ai/api-keys
+  - type: Authentication
+    url: authentication/alcatraz-ai-authentication.yml
+  x-evidence:
+    base_url_source: https://alcatraz-docs.s3.us-west-2.amazonaws.com/Guides/Alcatraz+AI+Admin+Portal+Guide+v2.5.pdf
+    base_url_source_note: 'Section 3.1.7.2 API Key Documentation: "Request URL for
+      Alcatraz AI API is https://platform.alcatraz.ai/api/v2/" and "use the authentication
+      header: x-alcatraz-api-key"'
+    checked: '2026-08-06'
+    host_resolves: false
+    host_resolution_note: platform.alcatraz.ai returned NXDOMAIN from 8.8.8.8, 1.1.1.1
+      and 9.9.9.9 on 2026-08-06; the documented API host is not resolvable from the
+      public internet.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alcatraz-ai-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.alcatraz.ai/
+- type: Documentation
+  url: https://support.alcatraz.ai/
+- type: Support
+  url: https://support.alcatraz.ai/
+- type: HelpCenter
+  url: https://support.alcatraz.ai/
+- type: Blog
+  url: https://www.alcatraz.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/Alcatraz-ai
+- type: TermsOfService
+  url: https://www.alcatraz.ai/utilities/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.alcatraz.ai/utilities/privacy-policy
+- type: TrustCenter
+  url: security/alcatraz-ai-trust-center.yml
+- type: Compliance
+  url: https://www.alcatraz.ai/resources/security
+- type: LLMsTxt
+  url: llms/alcatraz-ai-llms.txt
+- type: Authentication
+  url: authentication/alcatraz-ai-authentication.yml
+- type: Conformance
+  url: conformance/alcatraz-ai-conformance.yml
+- type: Lifecycle
+  url: lifecycle/alcatraz-ai-lifecycle.yml
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: Alcatraz publishes that a REST API exists at https://platform.alcatraz.ai/api/v2/
+    behind an x-alcatraz-api-key header, but the endpoint reference is only reachable
+    from the "API Docs" button inside the authenticated Admin Portal, the Help Center
+    tells everyone else to "contact your Alcatraz AI account manager", and the documented
+    API host does not even resolve from the public internet.
+  evidence:
+  - url: https://support.alcatraz.ai/api-keys
+    status: 200
+  - url: https://www.alcatraz.ai/openapi.json
+    status: 404
+  - url: https://platform.alcatraz.ai/api/v2/
+    status: 0
+  checked: '2026-08-06'

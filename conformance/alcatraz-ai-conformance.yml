@@ -1,0 +1,98 @@
+generated: '2026-08-06'
+method: searched
+source: https://www.alcatraz.ai/resources/security
+notes: 'Alcatraz AI publishes no OpenAPI, so nothing here is derived from a specification.
+  Every entry below is asserted from the company''s own public pages (security, privacy
+  and trust centre, llms.txt, product pages) or explicitly marked as not-assessable
+  because the API reference is behind the Admin Portal login.'
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: 'ISO/IEC 27001 named on https://www.alcatraz.ai/resources/security'
+- id: iso-27017
+  conforms: true
+  evidence: 'ISO/IEC 27017 (cloud service security) named on https://www.alcatraz.ai/resources/security'
+- id: iso-27018
+  conforms: true
+  evidence: 'ISO/IEC 27018 (PII in public cloud) named on https://www.alcatraz.ai/resources/security'
+- id: soc2-type-ii
+  conforms: true
+  evidence: 'SOC 2 Type II named on https://www.alcatraz.ai/resources/security and
+    in https://www.alcatraz.ai/llms.txt; the security page attributes it to the AWS
+    infrastructure the platform runs on.'
+- id: gdpr
+  conforms: true
+  evidence: 'Privacy-by-design architecture stated to support GDPR — https://www.alcatraz.ai/resources/privacy-trust-center'
+- id: ccpa
+  conforms: true
+  evidence: 'Stated to support CCPA — https://www.alcatraz.ai/resources/privacy-trust-center'
+- id: bipa
+  conforms: true
+  evidence: 'Stated to support the Illinois Biometric Information Privacy Act — https://www.alcatraz.ai/resources/privacy-trust-center'
+- id: onvif
+  conforms: true
+  evidence: 'Rock X functions as an ONVIF camera (8MP HD "video at the door") — https://www.alcatraz.ai/rock-x'
+- id: osdp
+  conforms: true
+  evidence: 'Rock/Rock X installs in-line on OSDP reader wiring to the access control
+    panel — https://www.alcatraz.ai/platform'
+- id: wiegand
+  conforms: true
+  evidence: 'Rock/Rock X installs in-line on Wiegand reader wiring to the access control
+    panel — https://www.alcatraz.ai/platform'
+- id: sip
+  conforms: true
+  evidence: 'Rock X includes a SIP intercom (omni-directional mic, 5W amplifier) —
+    https://www.alcatraz.ai/rock-x'
+- id: oidc
+  conforms: true
+  evidence: 'OpenID Connect single sign-on for Admin Portal administrators — https://support.alcatraz.ai/sso-configuration-guide.
+    Applies to the portal, not to API authentication.'
+- id: saml2
+  conforms: true
+  evidence: 'SAML 2.0 / Azure single sign-on for Admin Portal administrators — https://support.alcatraz.ai/single-sign-on-with-azure-and-saml'
+- id: tls12-plus
+  conforms: true
+  evidence: 'TLS 1.2/1.3 in transit stated on https://www.alcatraz.ai/resources/security;
+    independently probed TLSv1.3 on www.alcatraz.ai and support.alcatraz.ai (security/alcatraz-ai-domain-security.yml).'
+- id: aes-256
+  conforms: true
+  evidence: 'Facial signatures and system data stored AES-256 encrypted at rest on
+    the Rock — https://www.alcatraz.ai/resources/security'
+- id: fedramp
+  conforms: false
+  evidence: No FedRAMP authorization claimed on any public Alcatraz AI page.
+- id: hipaa
+  conforms: false
+  evidence: 'Healthcare is named as a served industry (https://www.alcatraz.ai/industries/healthcare-access-control)
+    but no HIPAA attestation or BAA is published.'
+- id: pci-dss
+  conforms: false
+  evidence: Not applicable; no payment surface.
+- id: oauth2
+  conforms: false
+  evidence: 'API access uses a static x-alcatraz-api-key header, not OAuth 2.0 — https://support.alcatraz.ai/api-keys'
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: 'Not assessable — no public API reference or specification; the endpoint
+    documentation sits behind the Admin Portal login.'
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: '/.well-known/security.txt returned 404 on www.alcatraz.ai, support.alcatraz.ai,
+    portal.alcatraz.ai and rock.alcatraz.ai on 2026-08-06.'
+- id: rfc8594-sunset-header
+  conforms: unknown
+  evidence: Not assessable — no public API reference and no published deprecation policy.
+x-evidence:
+- url: https://www.alcatraz.ai/resources/security
+  http_status: 200
+  fetched: '2026-08-06'
+- url: https://www.alcatraz.ai/resources/privacy-trust-center
+  http_status: 200
+  fetched: '2026-08-06'
+- url: https://www.alcatraz.ai/llms.txt
+  http_status: 200
+  fetched: '2026-08-06'
+- url: https://support.alcatraz.ai/3rd-party-integrations
+  http_status: 200
+  fetched: '2026-08-06'

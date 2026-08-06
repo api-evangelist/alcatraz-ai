@@ -1,0 +1,51 @@
+generated: '2026-08-06'
+method: searched
+source: https://www.alcatraz.ai/resources/availability
+versioning:
+  scheme: uri-path
+  current: v2
+  evidence: 'Documented request URL is https://platform.alcatraz.ai/api/v2/ — Admin
+    Portal Guide v2.5, section 3.1.7.2.'
+  docs: null
+  policy_published: false
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No API deprecation or sunset policy is published on any public Alcatraz AI page.
+sla:
+  url: https://www.alcatraz.ai/resources/availability
+  uptime_target: null
+  note: 'The availability page states "guaranteed monthly availability backed by service
+    credits if we fall short" but publishes no percentage; the SLA document itself is
+    not public. Redundancy commitments named: multi-availability-zone cloud deployment
+    with automatic failover, redundant hardware, and on-device caching so a Rock keeps
+    authenticating locally if the network drops.'
+status_page:
+  url: null
+  note: 'The availability page states "we provide a page where you can see system health,
+    uptime metrics, and incident reports in real time", but no URL is published and
+    status.alcatraz.ai does not resolve. The status page appears to be customer-only.'
+  probed:
+  - url: https://status.alcatraz.ai/
+    result: DNS does not resolve
+    checked: '2026-08-06'
+firmware:
+  note: 'Rock firmware is updated through the Admin Portal Firmware Update Manager;
+    updates run through a DTAP process. Release notes are not published publicly.'
+  docs: https://support.alcatraz.ai/admin-portal
+deprecated_operations: []
+gaps:
+- No public changelog or release notes for the API or the platform.
+- No published deprecation/sunset policy and no way to confirm RFC 8594 header support
+  without API access.
+- SLA target percentage and status page URL are both withheld from the public site.
+x-evidence:
+- url: https://www.alcatraz.ai/resources/availability
+  http_status: 200
+  fetched: '2026-08-06'
+- url: https://alcatraz-docs.s3.us-west-2.amazonaws.com/Guides/Alcatraz+AI+Admin+Portal+Guide+v2.5.pdf
+  http_status: 200
+  fetched: '2026-08-06'
+- url: https://support.alcatraz.ai/release-notes
+  http_status: 404
+  fetched: '2026-08-06'

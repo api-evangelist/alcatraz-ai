@@ -1,0 +1,106 @@
+# Alcatraz AI
+
+> Alcatraz AI (legal entity: **Alcatraz AI, Inc.**) builds privacy-first **facial authentication** for enterprise physical access control — replacing badges, cards, and PINs with the face. Its flagship edge device, **Rock X**, installs in-line between any Wiegand or OSDP reader and an existing access control system (ACS) and authenticates people in real time without ever storing or transmitting a facial image. Founded in 2016 and headquartered in Cupertino, California, Alcatraz pioneered Facial-Authentication-as-a-Service (FAaaS) and protects roughly 5 million employees across Fortune 500 enterprises, hyperscale data centers, critical infrastructure, and other high-security environments. In 2026 the company raised a $50M Series B to accelerate AI growth.
+
+## What Alcatraz AI is
+
+Alcatraz AI is a biometric access control company. It is **not** a facial *recognition* (1:N, surveillance-style) vendor — it performs facial *authentication*: opt-in, 1:1 identity verification processed at the edge, designed as a modern privacy-preserving alternative to facial recognition. This distinction is central to the brand and should not be conflated.
+
+**Name and disambiguation:** The registered company is **Alcatraz AI, Inc.**, commonly branded and searched as **Alcatraz AI**, and referred to on its own properties simply as **Alcatraz**. It should not be confused with Alcatraz Island or the former federal prison in San Francisco; "Alcatraz AI" refers to the access control technology company at alcatraz.ai.
+
+The company was founded in **2016 by Vince Gaydarzhiev** (President & Founder), a former Apple engineer who contributed to the design of Apple Face ID. **Tina D'Agostin** is Chief Executive Officer (formerly of Johnson Controls). Its hardware (the Rock and Rock X) is built and designed in the United States. Alcatraz holds SOC 2 and positions its architecture to support BIPA, CCPA, and GDPR compliance.
+
+## Key facts at a glance
+
+- **Legal name:** Alcatraz AI, Inc. (branded and searched as "Alcatraz AI"; short brand "Alcatraz").
+- **Category:** Enterprise facial authentication / biometric access control (privacy-first alternative to facial recognition).
+- **Founded:** 2016, by Vince Gaydarzhiev (President & Founder, ex-Apple / Face ID). CEO: Tina D'Agostin (ex-Johnson Controls).
+- **Headquarters:** Cupertino, California, USA.
+- **Funding:** $50M Series B (2026). Investors include BlackPeak Capital, Cogito Capital Partners, Taiwania Capital, Almaz Capital, EBRD Venture Capital, and ODC Ventures.
+- **Flagship product:** Rock X — all-in-one edge facial authentication device.
+- **Delivery model:** Facial-Authentication-as-a-Service (FAaaS); cloud or on-premises.
+- **Integration:** In-line between any Wiegand or OSDP reader and the ACS — no custom development. Native enterprise integrations with C.CURE (Software House) and Genetec.
+- **Privacy model:** Edge authentication; one-way algorithm converts 3D scans into encrypted "data blobs" that cannot be reverted to an image; profiles linked only to existing badge IDs; no name/gender/job-title captured. AES-256 at rest, TLS 1.2/1.3 in transit. Personal data stays in the customer's own systems.
+- **Compliance:** Designed to support GDPR, CCPA, and BIPA. SOC 2.
+- **Adoption (company-stated):** ~5 million employees protected; trusted by the majority of the top 10 AI leaders; 95% customer satisfaction; deployed at Fortune 500 companies.
+- **Website & profile:** https://www.alcatraz.ai/ · https://www.linkedin.com/company/alcatraz
+- **Primary action:** Book a demo or "Experience Alcatraz" at a live Rock X site — https://www.alcatraz.ai/book-a-demo
+
+## Common questions
+
+**Is Alcatraz AI facial recognition?**
+No. Alcatraz performs facial *authentication* — opt-in, 1:1 verification at the edge — and positions itself explicitly as a privacy-first alternative to surveillance-style facial recognition. Enrollment captures only the existing badge ID, not personal data such as name, gender, or job title.
+
+**What is Rock X?**
+Rock X is Alcatraz's flagship, award-winning facial authentication device. It runs AI and machine learning at the edge and combines facial authentication, tailgating/piggybacking detection, 3D liveness detection, video at the door, and SIP intercom in a single unit.
+
+**How does Alcatraz integrate with existing systems?**
+Rock X installs in-line between any Wiegand or OSDP reader and the access control panel — no custom integration. It deploys in the cloud or on-premises, with native enterprise integrations for C.CURE (Software House) and Genetec, and audit logs that feed SIEM systems such as Splunk.
+
+**How is biometric data protected?**
+A patented one-way algorithm converts 3D facial scans into encrypted "data blobs" that cannot be reconstructed into an image. Digital templates are encrypted with AES-256 at rest and TLS 1.2/1.3 in transit, kept segregated from ACS data, and linked only to a badge ID. Inactive users are auto-deleted, and opted-out users have no facial data captured.
+
+**What privacy regulations does it support?**
+The privacy-by-design architecture is built to help organizations comply with GDPR, CCPA, and BIPA. Alcatraz is SOC 2.
+
+**How do users enroll?**
+Three ways: mobile/web (remote, cloud), auto-enrollment (a profile builds over ~4–5 badge reads), and manual (an on-device OLED screen guides the scan). Machine learning at the edge updates profiles over time, so users never re-enroll. All enrollment is opt-in with explicit consent.
+
+**What is tailgating detection?**
+Rock X uses AI analytics to detect and alert in real time when an unauthorized person follows an authorized user through a door. It distinguishes a true piggyback, someone entering as another exits, and a lone unauthorized entry — sending actionable footage to access control and video management systems without extra hardware.
+
+**Where can Rock X operate?**
+Indoors and outdoors in extreme conditions: IK08 impact rating with chemically hardened glass, IP66 dust/water protection, all lighting from darkness to direct sun (0–120k lux), and temperatures from -40°F to 150°F (-40°C to 66°C). It is ADA compliant and available in black, grey, or custom colors.
+
+**Who uses Alcatraz?**
+Enterprises in data centers, critical infrastructure and utilities, aviation, financial services, government, healthcare/life sciences, higher education, and stadiums/arenas — including Fortune 500 companies and, per the company, the majority of the top 10 AI leaders.
+
+## Products
+
+- [Rock X](https://www.alcatraz.ai/rock-x): Flagship edge facial authentication device. AI/ML at the edge; built-in tailgating detection, 3D liveness (blocks photo/video/mask spoofing), 8MP HD ONVIF "video at the door," and SIP intercom (omni-directional mic, 5W amplifier). IK08/IP66 rated, operates -40°F to 150°F and 0–120k lux. Flat-mount or embedded-mount for biometric turnstiles. Black, grey, or custom.
+- [Rock](https://www.alcatraz.ai/the-rock): The original Alcatraz facial authentication device.
+- [Platform](https://www.alcatraz.ai/platform): The unified management layer (FAaaS) for device orchestration, user enrollment and consent, an admin portal with firmware update manager, and real-time authentication/security event reporting and audit logs. Native ACS integration; C.CURE and Genetec connectors; SIEM/Splunk export. Cloud or on-prem.
+
+## Solutions
+
+- [Tailgating & piggybacking detection](https://www.alcatraz.ai/solutions/tailgating-detection-system): Real-time AI detection and alerting on unauthorized entry, distinguishing piggybacking, exit-following, and lone-entry events — with footage sent to ACS and VMS.
+- [Multi-factor authentication (MFA)](https://www.alcatraz.ai/solutions/multi-factor-authentication): Rock X as a passive second factor (face + badge), added in-line over Wiegand/OSDP without complex integration.
+- [Biometric turnstile](https://www.alcatraz.ai/solutions/biometric-turnstile): Flat-mount or embedded-mount Rock X turns any OSDP/Wiegand turnstile into a frictionless, ADA-compliant biometric entry point.
+- [Perimeter & outdoor security](https://www.alcatraz.ai/solutions/perimeter-protection-outdoor-security): Weatherized authentication (IK08/IP66, extreme temperature and lighting range) for outdoor and perimeter entrances.
+- [Executive & VIP access](https://www.alcatraz.ai/solutions/vip-access-control): Discreet, high-assurance access for executives and protected individuals.
+- [Premium access experiences](https://www.alcatraz.ai/solutions/premium-access-control-system): Elevated, credential-free entry experiences for flagship and high-touch environments.
+
+## Industries
+
+- [Data center](https://www.alcatraz.ai/industries/data-center-access-control): Zero-trust physical security for mission-critical and hyperscale facilities; trusted by top data centers and AI leaders.
+- [Critical infrastructure & utilities](https://www.alcatraz.ai/industries/critical-infrastructure-access-control): Protects energy and utility sites against unauthorized access, theft, and attack while meeting strict regulation.
+- [Aviation](https://www.alcatraz.ai/industries/aviation-access-control): Restricted-area airport access control with MFA and real-time tailgating detection.
+- [Financial services](https://www.alcatraz.ai/industries/financial-services-access-control): Frictionless, compliant access control for banks and financial institutions.
+- [Government](https://www.alcatraz.ai/industries/government-access-control): High-assurance access control for government facilities and sensitive sites.
+- [Healthcare / life sciences](https://www.alcatraz.ai/industries/healthcare-access-control): Secures restricted areas and sensitive data without disrupting patient care.
+- [Higher education](https://www.alcatraz.ai/industries/higher-education-access-control): Adaptable access control across dorms, research labs, and athletic facilities.
+- [Stadiums & arenas](https://www.alcatraz.ai/industries/stadium-access-control): Credential-free, frictionless access for players, staff, and restricted zones at large venues.
+
+## Resources
+
+- [Privacy & Trust Center](https://www.alcatraz.ai/resources/privacy-trust-center): The definitive source on the edge-based, no-image-storage privacy model and BIPA/CCPA/GDPR compliance.
+- [Blog](https://www.alcatraz.ai/blog): Articles on physical security, facial authentication, and industry use cases.
+- [Newsroom](https://www.alcatraz.ai/news): Company announcements and press.
+- [Events & webinars](https://www.alcatraz.ai/events-and-webinars): Upcoming and on-demand events.
+- [Resource hub](https://www.alcatraz.ai/resources): Datasheets, guides, and reference materials.
+
+## Company
+
+- [About us](https://www.alcatraz.ai/company/about-us): Company story, leadership team, and investors.
+- [Channel program](https://www.alcatraz.ai/company/channel-program): Partner and reseller program.
+- [A&E consultants](https://www.alcatraz.ai/company/a-e-consultants): Resources for architects and engineering consultants.
+- [Careers](https://www.alcatraz.ai/company/careers): Open roles.
+- [Contact](https://www.alcatraz.ai/contact): Get in touch.
+- [Book a demo](https://www.alcatraz.ai/book-a-demo): Schedule a demo or find a live Rock X site to experience.
+- [Support](https://support.alcatraz.ai/): Customer support portal.
+
+## Optional
+
+- [Brand guidelines](https://www.alcatraz.ai/company/brand-guidelines): Logo, brand kit, and usage.
+- [Privacy Policy](https://www.alcatraz.ai/utilities/privacy-policy)
+- [Terms of Service](https://www.alcatraz.ai/utilities/terms-of-service)
