@@ -29,6 +29,48 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-compliance-assurance.py
   first_seen: '2026-10-20'
+- partner_name: ONVIF
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.onvif.org/conformant-products/
+  category: video surveillance interface conformance
+  contract_reference:
+    register: ONVIF conformant products (onvif.org/conformant-products)
+    standard: ONVIF
+    spec_file: null
+    role: onvif-conformant-member
+    registered_name: Alcatraz AI, Inc.
+    register_id: onvif-company-251468
+    matched_domain: alcatraz.ai
+    matched_by: domain
+    detected_by: sweep-onvif-video-analytics.py
+    detected: '2026-10-21'
+    certified_products:
+    - product: ONVIF Profile S
+      lapsed: false
+      roles:
+      - device
+      newest_test: '2021-05-06'
+      products_listed: 1
+    - product: ONVIF Profile T
+      lapsed: false
+      roles:
+      - device
+      newest_test: '2021-05-06'
+      products_listed: 1
+    products_sample:
+    - Rock
+    signal_note: certified_products = one entry per ONVIF profile the company holds a conformant product for, never
+      per product; roles, counts and test dates are context. The register carries no expiry and drops withdrawn
+      products, so lapsed is false
+    register_country: United States
+  detected_by: sweep-onvif-video-analytics.py
+  first_seen: '2026-10-21'
+  partner_tier: user
 generated: '2026-10-20'
 method: searched
 source:
@@ -37,3 +79,7 @@ source:
 checked:
 - https://cloudsecurityalliance.org/star/registry
 - https://eucoc.cloud/en/public-register/list-of-adherent-services
+- https://www.onvif.org/about/member-list/
+- https://www.onvif.org/conformant-products/
+- https://www.onvif.org/member-tools/wp-admin/admin-ajax.php?action=get_companies_list
+- https://www.onvif.org/member-tools?action=product_search
