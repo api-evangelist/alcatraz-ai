@@ -64,5 +64,92 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Alcatraz AI is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Alcatraz AI, Inc. builds privacy-first facial authentication for enterprise physical access control, replacing badges, cards and PINs with the face. Its flagship edge device, Rock X, installs in-line between any Wiegand or OSDP reader and an existing access control system and authenticates people in real time at the edge without storing or transmitting a facial image. Founded in 2016 in Cupertino, California, the company pioneered Facial-Authentication-as-a-Service (FAaaS) and layers tailgating detection, 3D liveness, ONVIF video-at-the-door and SIP intercom onto a single reader, managed through a cloud or on-premises Admin Portal with native C-CURE and Genetec integrations and a customer-facing REST API secured with an x-alcatraz-api-key header.
+
+**Areas:** Company · Access Control · Biometrics · Facial Authentication · Physical Security · Identity · IoT · Artificial Intelligence
+
+## Alcatraz AI on APIs.io
+
+Everything profiled for Alcatraz AI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/alcatraz-ai/](https://apis.io/providers/alcatraz-ai/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Alcatraz Admin Portal API](https://apis.io/apis/alcatraz-ai/admin-portal-api/) — Customer-facing REST API for the Alcatraz Admin Portal, used by third-party projects and applications to administer Rock devices, users, profiles and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Alcatraz Ai Authentication](https://apis.io/security/alcatraz-ai/alcatraz-ai-authentication/)
+- [Alcatraz Ai Domain Security](https://apis.io/security/alcatraz-ai/alcatraz-ai-domain-security/)
+- [Alcatraz Ai Trust Center](https://apis.io/security/alcatraz-ai/alcatraz-ai-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.alcatraz.ai/)
+- [Documentation](https://support.alcatraz.ai/)
+- [Support](https://support.alcatraz.ai/)
+- [Blog](https://www.alcatraz.ai/blog)
+- [Compliance](https://www.alcatraz.ai/resources/security)
+- [Terms of service](https://www.alcatraz.ai/utilities/terms-of-service)
+- [Privacy policy](https://www.alcatraz.ai/utilities/privacy-policy)
+- [GitHub](https://github.com/Alcatraz-ai)
+
+## API Evangelist rating
+
+**Kin Score 24.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 36.8 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 26.3** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/alcatraz-ai/](https://apis.io/providers/alcatraz-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Alcatraz AI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/alcatraz-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
